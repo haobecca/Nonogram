@@ -2,9 +2,6 @@
 
 import numpy as np
 
-# col_hints = np.array([[' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' '], ['3', '5', '5', '5', '5', '5', '3']])
-# row_hints = np.array([[' ', '1', '1'], [' ', '3', '3'], [' ', ' ', '7'], [' ', ' ', '7'], [' ', ' ', '5'], [' ', ' ', '3'], [' ', ' ', '1']])
-
 puzzle1 = {'level': 'beginner',
            'width': 7,
            'height': 7,
@@ -16,19 +13,33 @@ puzzle1 = {'level': 'beginner',
                                   [' ', ' ', '5'], [' ', ' ', '3'],
                                   [' ', ' ', '1']])}
 
-
 width = puzzle1['width']
 row_hints = puzzle1['row_hints']
 col_hints = puzzle1['col_hints']
 
 col_divide = [' ', ' ', ' ', ' ', ' ', '|'] + ['-', '|'] * width
-init_row1 = [row_hints[0,0], ' ', row_hints[0,1], ' ', row_hints[0,2], '|'] + ['.', '|'] * width
-init_row2 = [row_hints[1,0], ' ', row_hints[1,1], ' ', row_hints[1,2], '|'] + ['.', '|'] * width
-init_row3 = [row_hints[2,0], ' ', row_hints[2,1], ' ', row_hints[2,2], '|'] + ['.', '|'] * width
-init_row4 = [row_hints[3,0], ' ', row_hints[3,1], ' ', row_hints[3,2], '|'] + ['.', '|'] * width
-init_row5 = [row_hints[4,0], ' ', row_hints[4,1], ' ', row_hints[4,2], '|'] + ['.', '|'] * width
-init_row6 = [row_hints[5,0], ' ', row_hints[5,1], ' ', row_hints[5,2], '|'] + ['.', '|'] * width
-init_row7 = [row_hints[6,0], ' ', row_hints[6,1], ' ', row_hints[6,2], '|'] + ['.', '|'] * width
+
+init_row1 = [row_hints[0, 0], ' ',
+             row_hints[0, 1], ' ',
+             row_hints[0, 2], '|'] + ['.', '|'] * width
+init_row2 = [row_hints[1, 0], ' ',
+             row_hints[1, 1], ' ',
+             row_hints[1, 2], '|'] + ['.', '|'] * width
+init_row3 = [row_hints[2, 0], ' ',
+             row_hints[2, 1], ' ',
+             row_hints[2, 2], '|'] + ['.', '|'] * width
+init_row4 = [row_hints[3, 0], ' ',
+             row_hints[3, 1], ' ',
+             row_hints[3, 2], '|'] + ['.', '|'] * width
+init_row5 = [row_hints[4, 0], ' ',
+             row_hints[4, 1], ' ',
+             row_hints[4, 2], '|'] + ['.', '|'] * width
+init_row6 = [row_hints[5, 0], ' ',
+             row_hints[5, 1], ' ',
+             row_hints[5, 2], '|'] + ['.', '|'] * width
+init_row7 = [row_hints[6, 0], ' ',
+             row_hints[6, 1], ' ',
+             row_hints[6, 2], '|'] + ['.', '|'] * width
 
 
 def print_grid(grid):
