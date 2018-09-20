@@ -21,12 +21,6 @@ puzzle1 = {'level' : 'beginner',
                  )
             }
 
-'''
-TODO
-class Puzzle():
-    Initializes puzzle object. 
-    def __init__(self, puzzleID):
-'''
 
 def init_grid(puzzleID):
     width = puzzleID['width']
